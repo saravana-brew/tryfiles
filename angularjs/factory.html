@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>factory</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  </head>
+  <body ng-app="myapp">
+    <div ng-controller="myctrl">
+      {{dispaly}}
+    </div>
+
+    <script>
+      var app=angular.module('myapp',[]);
+      app.factory("number",function () {
+        var cncn={};
+        cncn=5;
+        return cncn;
+      });
+
+      app.controller('myctrl',function($scope,number){
+        console.log(number);
+        $scope.display=number;
+      });
+    </script>
+  </body>
+</html>

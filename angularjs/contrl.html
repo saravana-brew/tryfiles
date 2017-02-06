@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+    </script>
+  </head>
+  <body>
+    <div class="container" ng-controller="myfunc">
+  type:<input type="text" ng-model="name">
+  <br />
+    here
+    <ul>
+      <li ng-repeat="de in person | filter:value | orderBy:'city'">{{de.name | uppercase}} - {{de.city | lowercase}}</li>
+    </ul>
+    </div>
+
+    <script>
+    function myfunc($scope) {
+      $scope.person= [
+      {name:'aaa',city:'chennai'},
+      {name:'bbb',city:'madurai'},
+      {name:'ccc',city:'covai'}
+    ];
+    </script>
+
+
+  </body>
+</html>

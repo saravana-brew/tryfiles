@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>provider ok</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+    </script>
+  </head>
+  <body ng-app="myapp">
+    <div ng-controller="myctrl">
+      {{message}}
+    </div>
+
+    <script>
+      var app=angular.module('myapp',[]);
+      app.provider('myprovider',function(){
+        this.d="the data to be displayed";
+        this.$get= function(){
+          return{
+            msg : this.d
+          }
+        };
+      });
+
+      app.controller('myctrl',function ($scope,myprovider) {
+        console.log(myprovider.msg);
+        $scope.message=myprovider.msg;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body ng-init="names=[{name:'aaa',city:'che'},{name:'bbb',city:'madu'},{name:'ccc',city:'covai'}]">
+    <input type="text" ng-model="name"> {{name}}
+    <ul>
+      <li ng-repeat="person in names">{{person.name}} - {{person.city}}</li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js">
+    </script>
+  </body>
+</html>

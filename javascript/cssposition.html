@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+ position: static;
+ border-style: solid;
+ border-color: black;
+ }
+ section{
+ position:relative;
+ left: 20px;
+ top: 50px;
+ border-style: solid;
+ border-color: yellow;
+ }
+  article {
+  position:fixed;
+  top: 70px;
+  right: 20px;
+  }
+  #index {
+  
+  
+  top:150px;  
+  left:150px;
+  }
+  img {
+  position:absolute;
+  z-index: -1; 
+  }
+  .source{
+  top: 100em;
+  position: relative;
+</style>
+</head>
+<body>
+<div>
+<p> para using position </p>
+<p>para using position fff</p>
+</div>
+<section>
+<p> second one</p>
+<p> seconfdsss </p>
+</section>
+<article>
+<p> second grbgonefdbbrg</p>
+<p> seconfdsssbsrfgbrbrb </p>
+</article>
+<p id="index"> rgwrgbtsrbbgfrgbgrbThe position Property
+The position property specifies the type of positioning method used for an element.
+
+There are four different position values:
+
+static
+relative
+fixed
+absolute
+Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.
+<img src="image.jpg" height="50px" width="52">
+position: static;
+HTML elements are positioned static by default.
+
+Static positioned elements are not affected by the top, bottom, left, and right properties.
+
+An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:
+
+Here is the CSS that is used:</p>
+<p>
+<div class="source">
+<p>image</p>
+<img src="image.jpg" width="100" height="100">
+<p class="another"> top or right </p>
+</div>
+</body>
+</html>

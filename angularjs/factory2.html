@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>factory done</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+    </script>
+  </head>
+  <body ng-app="myapp">
+    <div ng-controller="myctrl">
+      {{message}}
+    </div>
+
+    <script>
+      var app=angular.module('myapp',[]);
+
+      app.factory('myftry',function(){
+        var ftry={};
+        ftry="the content will be displayed";
+        return ftry;
+      });
+
+      app.controller('myctrl',function ($scope,myftry) {
+        console.log(myftry);
+        $scope.message=myftry;
+      });
+    </script>
+  </body>
+</html>

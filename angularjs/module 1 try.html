@@ -1,0 +1,20 @@
+<DOCTYPE html>
+<html >
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+</script>
+</head>
+<body>
+
+ <div ng-app="myapp" ng-controller="ctrl">
+ <h1>{{value}}</h1>
+ </div>
+
+ <script>
+ var data = angular.module('myapp',[]);
+ data.controller('ctrl',function ($scope){
+ $scope.value=" dispaly";
+ });
+ </script>
+</body>
+</html>

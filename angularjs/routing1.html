@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+  <body>
+    <a href="#home">home</a>
+    <br />
+    <a href="#one">one</a>
+    <a href="#two">two</a>
+    <ng-view></ng-view>
+
+    <script>
+      var app = angular.module ('myapp',["ngRoute"]);
+      app.config(function($routeProvider){
+        $routeProvider
+        .when("/home", {
+          templateUrl : "http://www.w3schools.com/angular/angular_routing.asp"
+        })
+        .when("/one",{
+          templateUrl : "http://www.w3schools.com/angular/angular_routing.asp"
+        })
+        .when("/two",{
+          templateUrl : "http://www.w3schools.com/angular/angular_routing.asp"
+        });
+      });
+
+    </script>
+  </body>
+</html>

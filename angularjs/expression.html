@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+  <head>
+    <meta charset="utf-8">
+    <title>expression</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  </head>
+  <body >
+    <div ng-controller="myctrl">
+      <p id="demo">here</p> {{message}}
+      <button ng-click=car()>cars</button>
+      <button ng-click=bike()>bikes</button>
+      <button type="button"ng-click=rece() name="button">reces</button>
+    </div>
+<script>
+var app=angular.module("myapp",[]);
+  app.controller('myctrl',function ($scope) {
+    $scope.message="value one two three";
+    $scope.car=function(){
+      $scope.message="on car";
+    }
+    $scope.bike=function () {
+      $scope.message="on bkie";
+    }
+    $scope.rece=function () {
+      $scope.message="on races";
+    }
+    console.log($scope.message);
+  });
+</script>
+  </body>
+</html>

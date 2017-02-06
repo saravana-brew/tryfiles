@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+  <body ng-app="myapp">
+    <p><a href="#menu">menu</a></p>
+    <a href="#one">one</a>
+    <a href="#two">two</a>
+    <div class="ng-view"></div>
+
+    <script>
+    var app = angular.module('myapp',[ngRoute]);
+    app.config(function($routeProvider){
+$routeProvider
+.when("/menu",{
+  templateUrl : "file:///F:/atom/angularjs/one.html"
+})
+.when("/one",{
+  templateUrl : "file:///F:/atom/angularjs/one.html"
+})
+.when("/two",{
+  templateUrl : "file:///F:/atom/angularjs/one.html "
+})
+  })
+    </script>
+  </body>
+</html>

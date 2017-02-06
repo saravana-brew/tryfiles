@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>pop push</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <button type="button" name="button" onclick="poppush1()">clickhere</button>
+      <p id="demo1" ></p>
+    <script>
+      var name= ["one", "two","three","four"];
+      document.getElementById('demo').innerHTML= name;
+      
+      function poppush1() {
+        document.getElementById('demo1').innerHTML= name.pop();
+
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>sort</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <p id="demo1"></p>
+    <button type="button" name="button" onclick="myfun()">click</button>
+    <script>
+      var x= [10,20,15,30,5];
+          document.getElementById('demo').innerHTML= x;
+      function myfun(){
+        x.sort(function( a,b ) {return b-a});
+        document.getElementById('demo1').innerHTML= x[0];
+      }
+
+    </script>
+  </body>
+</html>

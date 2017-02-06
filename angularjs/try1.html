@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>new file</title>
+    <script SRC="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script SRC-="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+  </head>
+  <body  ng-app="myapp">
+    <p> <a href="#main">main</a></p>
+
+    <a href="#one">one</a>
+    <a href="#two">two</a>
+    <p>contents will be displayed bellow</p>
+    <div ng-view></div>
+    <p>above the content</p>
+    <script>
+    var app= angular.module("myapp",["ngRoute"]);
+      app.config(function ($routeProvider) {
+        $routeProvider
+          .when("/main",{
+            template : "atom/angularjs/one.html"
+          })
+          .when("/one",{
+            template : "the one in two content"
+          })
+          .when("/two",{
+            template : "gularjs/two.html"
+          });
+        });
+    </script>
+  </body>
+</html>

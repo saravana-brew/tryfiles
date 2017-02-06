@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>file</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+  </head>
+  <body ng-app="myapp">
+    <p><a href="#man">main</a></p>
+    <a href="#a">aaa</a>
+    <a href="#b">bbb</a>
+    <p>below the content</p>
+    <div ng-view>
+    </div>
+    <p>above the content</p>
+    <script>
+      var app = angular.module ('myapp',["ngRoute"]);
+      app.config(function($routeProvider) {
+        $routeProvider
+        .when("/man",{
+          template : "maaainn"
+        })
+        .when("/a",{
+          template :  "aaaaaa"
+        })
+        .when("/b",{
+          template : "bbbbb"
+        })
+      });
+    </script>
+  </body>
+</html>

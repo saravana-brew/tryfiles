@@ -1,0 +1,64 @@
+body{
+background-color: #D1A5B2;
+}
+#one1{
+  padding: 2em;
+  margin: 10px;
+}
+.one{
+  background-color: gray;
+  color: white;
+  overflow: hidden;
+  padding: 50px;
+}
+.one ul{
+  list-style-type: none;
+}
+.one li{
+  float: left;
+}
+.one li a{
+  text-decoration: none;
+  padding: 1em;
+  margin: 0;
+  color: white;
+}
+.one li a:hover{
+  background-color: black;
+  color: red;
+}
+.two{
+  background-color: #703673;
+    overflow: auto;
+}
+#two{
+  background-color: #D48077;
+  margin: 0;
+}
+img{
+float: left;
+}
+#para{
+  padding: 5px;
+  margin: 2em;
+
+}
+.contentcontainer{
+background-color: #90C3D4;
+  text-align: justify;
+  overflow: hidden;
+}
+.contentcontainer h2{
+  background-color: #D48077;
+  color: white;
+  text-align: center;
+  margin: 38px;
+  word-spacing: 5PX;
+  letter-spacing: 5px;
+}
+.contentlist li{
+    float: left;
+}
+li{
+  float: right;
+}

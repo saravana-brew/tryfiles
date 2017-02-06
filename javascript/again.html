@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>again function</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      var bike ={
+        name: "enfiled",
+        color: "black",
+        model: 2005,
+        details: function() {
+          return this.name + " " + this.model
+        }
+      };
+      document.getElementById('demo').innerHTML= bike.details();
+    </script>
+
+  </body>
+</html>

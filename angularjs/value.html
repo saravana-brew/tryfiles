@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>value</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+    </script>
+  </head>
+  <body ng-app="myapp">
+    <div ng-controller="myctrl">
+     {{message}}
+    </div>
+
+<script>
+  var app=angular.module('myapp',[]);
+
+  app.value("myvalue", 90);
+
+  app.controller('myctrl',function ($scope, myvalue) {
+    console.log(myvalue);
+    $scope.message=myvalue;
+  });
+
+
+</script>
+  </body>
+</html>

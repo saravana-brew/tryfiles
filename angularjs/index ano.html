@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>demo app</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  </head>
+  <body ng-app="myapp" ng-controller="myctrl" >
+    <h2 ng-bind="name"></h2>
+
+        <script>
+          var app=angular.module('myapp',[]);
+          app.controller('myctrl',function($scope){
+            $scope.name="This is demo app";
+          });
+        </script>
+  </body>
+</html>

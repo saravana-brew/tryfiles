@@ -1,0 +1,9 @@
+<html>
+	<head>
+		<title> learn
+		</title>
+	</head>
+			<body>
+<img src="E:\Priya\kumar.jpg">
+			</body>
+</html>

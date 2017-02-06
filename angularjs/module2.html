@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js">
+    </script>
+    <title>module2</title>
+  </head>
+  <body>
+    <div ng-controller="myCtrl">
+      {{value}}
+    </div>
+    <script>
+      var app = angular.module('myApp',[]);
+      app.controller('myCtrl',function($scope){
+        $scope.value="onetwothree";
+      }) ;
+    </script>
+  </body>
+</html>

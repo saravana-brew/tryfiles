@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>simple login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  </head>
+  <body ng-app="myapp">
+    <div ng-view></div>
+
+
+
+<script>
+  var app=angular.module('myapp',['ngRoute']);
+  app.config($routeProvider,function( $scope, $routeProvider) {
+    $routeProvider
+    .when("/",{
+      templateUrl :  "login.html",
+    })
+    .when("/dashboard",{
+      template : "you have been successfully loged";
+    })
+  })
+</script>
+
+  </body>
+</html>
